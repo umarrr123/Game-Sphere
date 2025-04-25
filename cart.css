@@ -1,0 +1,72 @@
+.quantity {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.quantity input{
+    width: 60px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+
+.buttons {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px
+}
+
+.buttons button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.buttons button:hover {
+    background-color: #a32525;
+  }
+
+  .buttons i {
+    font-size: 20px;
+  }
+
+/*table */
+#cart-table {
+    width: 99%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #351313;
+    color: #fff;
+    font-family: 'varela round', sans-serif;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  
+.remove-btn {
+    background-color: #711616;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #8a2c2c;
+}

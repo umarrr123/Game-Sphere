@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./computer accessories.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GAMESPHERE</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GameSphere</h1>
+        </div>
+
+        <input type="checkbox" id="menu-drop" class="menu-drop">
+        <label for="menu-drop" class="phnmenu">&#9776;</label>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT US</a></li>
+                   <li><a href="upcoming.html">UPCOMING GAMES</a></li>
+                   <li><a href="games.html">GAMES</a></li>
+                   <li>
+                    <a href="consoles.html">CONSOLES AND GAMING PERIPHERALS</a>
+                        <ul>
+                            <li><a href="consoles.html">CONSOLES</a></li>
+                            <li><a href="peripherials.html">GAMING PERIPHERALS</a></li>
+                        </ul>
+                   </li>
+                   <li><a href="computer accessories.html">COMPUTER ACCESSORIES</a></li>
+                   <li><a href="queries.html">FAQ's AND QUERIES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+
+        <nav class="section-nav">
+            <ul class="sectionNav-content">
+                <li><a href="computer accessories.html" class="active">Processors</a></li>
+                <li><a href="graphics.html">Graphic Cards</a></li>
+                <li><a href="boards.html">Motherboard</a></li>
+                <li><a href="memory.html">Memory (RAM)</a></li>
+                <li><a href="storage.html">Storage Devices</a></li>
+    
+            </ul>
+        </nav>
+        
+        <section class="product-grid">
+            <div class="grid-container">
+              
+              <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 1.jpg" alt="">
+                  <div class="hover-price">RS 60,000</div>
+                </div>
+                <div class="games-desc">
+                  <h2>MSI X570-A PRO</h2>
+    
+                  <div class="quantity">
+                    <label for="qty13">Qty:</label>
+                    <input type="number" id="qty13" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 2.jpg" alt="">
+                  <div class="hover-price">RS 35,000</div>
+                </div>
+                <div class="games-desc">
+                  <h2>Gigabyte B550 AORUS PRO V2</h2>
+    
+                  <div class="quantity">
+                    <label for="qty14">Qty:</label>
+                    <input type="number" id="qty14" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 3.jpg" alt="">
+                  <div class="hover-price">RS 50,000</div>
+                </div>
+                <div class="games-desc">
+                  <h2>ASUS ROG Strix Z590-E Gaming WiFi</h2>
+    
+                  <div class="quantity">
+                    <label for="qty15">Qty:</label>
+                    <input type="number" id="qty15" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 4.jpg" alt="">
+                  <div class="hover-price">RS 80,000</div>
+                </div>
+                <div class="games-desc">
+                  <h2>MSI MAG B550 TOMAHAWK WIFI</h2>
+    
+                  <div class="quantity">
+                    <label for="qty16">Qty:</label>
+                    <input type="number" id="qty16" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+    
+              
+              <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 5.jpg" alt="">
+                  <div class="hover-price">RS 67,000</div>
+                </div>
+                <div class="games-desc">
+                  <h2>ASUS ROG Strix Z690-E Gaming WiFi</h2>
+    
+                  <div class="quantity">
+                    <label for="qty17">Qty:</label>
+                    <input type="number" id="qty17" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+    
+               
+               <div class="product-card">
+                <div class="img-container">
+                  <img src="images/board 6.jpg" alt="">
+                  <div class="hover-price">RS 27,500</div>
+                </div>
+                <div class="games-desc">
+                  <h2>ASRock B450M PRO4</h2>
+    
+                  <div class="quantity">
+                    <label for="qty18">Qty:</label>
+                    <input type="number" id="qty18" min="0" value="0">
+                  </div>
+                </div>
+              </div>
+    
+            
+              </div>
+    
+              <div class="buttons">
+                <button onclick="addToCart()" title="Add Selected items to your Cart"><i class='bx bx-cart'></i> Add to Cart</button>
+                <button onclick="saveFavourite()" title="Save your current cart as favourite"><i class='bx bx-bookmark'></i> Add to Favourites</button>
+                <button onclick="applyFavourite()" title="Load your saved favourite cart"><i class='bx bx-refresh'></i> Apply Favourites</button>
+                <button onclick="buyNow()" title="Go to checkout and complete your purchase"><i class='bx bx-credit-card'></i> Buy Now</button>
+                
+              </div>
+            </div>
+    
+            <table id="cart-table">
+              <thead>
+                <tr><th>Items</th><th>Qty</th><th>Price</th><th>Action</th></tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr><td colspan="2">Total</td><td id="total">0</td></tr>
+              </tfoot>
+            </table>
+            <div class="buttons">
+              <button onclick="clearFavourites()" title="Remove saved favourite from local storage"><i class='bx bx-trash-alt'></i> Clear Favourites
+              </button>
+            </div>
+            
+          </section>
+        <script src="main.js"></script>
+        <script src="cart.js"></script>
+      
+    
+</body>
+
+<footer>
+  <div class="footertop">
+      <h4>About Us</h4><br>
+      <p>At Gamesphere, we’re passionate about gaming. We offer the latest games, consoles,
+         and accessories,<br> along with an interactive, community-focused experience.
+         Whether you're shopping for new releases or exploring exclusive events,<br> we’re
+         here to help you level up your gaming journey.</p>
+
+  </div>
+
+  <div class="footercontainer">
+  <h5>Follow Us</h5><br>
+  <div class="socialicons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+  </div>
+  </div><br>
+
+  <div class="footerdetails">
+  <h5>Address:No 15 Peiris Place<br>Off Quarry Road<br>Dehiwela</h5>
+  </div>
+
+  <div class="footerbottom">
+  <p> Copyright   &copy; 2024; Designed by Umar Ali Sirajudeen</p>
+  </div>   
+</footer>
+</html>   

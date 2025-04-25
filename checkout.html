@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out - GAMESPHERE</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GAMESPHERE</title>
+</head>
+
+<body>
+    <button onclick="history.back()" class="backbtn"><i class='bx bx-arrow-back'></i> Go Back</button>
+    <main>
+        <h1>Checkout</h1>
+
+        
+        <section id="checkout-cart">
+            <h2>Cart Summary</h2>
+            <table id="checkout-cart-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr><td colspan="2">Total</td><td id="checkout-total">0</td></tr>
+              </tfoot>
+            </table>
+          </section>
+          
+        <form id="checkoutForm">
+
+            <!-- personal details list -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" required>
+            </fieldset>
+
+            <!-- delivery details list -->
+             <fieldset>
+                <legend>Delivery Details</legend>
+
+                <label for="address">Address: </label>
+                <textarea id="address" required></textarea>
+
+                <label for="city">City: </label>
+                <input type="text" id="city" required>
+
+                <label for="post">Postcode: </label>
+                <input type="text" id="post" required>
+             </fieldset>
+
+             <!-- payment details list -->
+             <fieldset>
+                <legend>Payment Details</legend>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" required>
+              </fieldset>
+              <button type="submit">Submit Order</button>
+        </form>
+    </main>
+<script src="checkout.js"></script>
+</body>
+</html>
